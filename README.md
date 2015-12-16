@@ -26,16 +26,15 @@ keywords are not case-sensitive.
 
 ## Tasks
 
-Tasks are unordered lists, with each item being a task. Mnemosyne borrows from the
-[todo.txt](http://todotxt.com/) rules to add completion, priority, and due date markup.
+Tasks are unordered lists, with each item being a task. They use the [GFM Task List][gfm-tasklist] format.
+
+[gfm-tasklist]: https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments
 
 ```
 ## Tasks
 
-- This is an unchecked item
-- x This is a completed item
-- (A) This is a priority item
-- 2000-01-01 This is an item due on January 1st, 2000
+- [ ] This is an unchecked item
+- [x] This is a completed item
 ```
 
 All list items that appear in the same list (same bullet style, no newlines between items) are
@@ -46,17 +45,17 @@ optionally be named by preceding the list with a line of text.
 ## Tasks
 
 Home Improvement
-- The following tasks are part of the Home Improvement task list
-- This is another task
-- x This is a completed task
+- [ ] The following tasks are part of the Home Improvement task list
+- [ ] This is another task
+- [x] This is a completed task
 
-- Since this is separated from the above list by a newline, it is not part of the Home
+- [ ] Since this is separated from the above list by a newline, it is not part of the Home
   Improvement task list and is unnamed
-* This is also in a separate task list since it uses a different bullet style, even
+* [ ] This is also in a separate task list since it uses a different bullet style, even
   though it isn't separated by a newline
   
 Named Task Set
-- This is another named task set
+- [ ] This is another named task set
 ```
 
 ## Notes
